@@ -1,0 +1,7 @@
+[flake8]
+
+exclude = sticky_notes, migrations
+
+max-line-length = 79
+
+ignore = F841, E128

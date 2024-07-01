@@ -1,0 +1,21 @@
+Task 24 – steps 14 and 15 answers
+14. 
+HTTP apps use a mix of cookies, sessions, tokens, local storage and some other methods in order to preserve the state of an application across several request-response cycles. The choice of method is dependent on specific requirements for that app, such as scalability or security. 
+Sessions is where data is stored on the server side. The data is associated with a unique session ID. The server uses this session ID to retrieve and the stored data and keep its state across requests.
+Tokens can also be used to preserve the state of an app across multiple request-response cycles. Tokens are often used for authentication purposes. When a user logs in, a server generates a token and sends it to the client. The client includes this token in later requests. This allows the server to verify the token and as a result authenticate the user.
+
+
+15.
+In order to perform a database migration to a server-based database like MariaDB, you would do the following:
+1. Make sure you have the right connector installed in your virtual environment as well as MariaDB itself.
+2. Login in the MariaDB server and create a new database and user for your project.
+3. Update your Django project settings. In the DATABASES section it should look something like:
+* ‘default’: {
+‘ENGINE’ : ‘django.db.backends.mysql’,
+‘NAME’ : ‘django_db’
+‘USER’ : ‘django_user’
+‘PASSWORD’ : ‘your_password’
+‘HOST’ : ‘localhost’,
+‘PORT’: ‘3306’,
+}
+4. Make migrations as normal.
