@@ -24,3 +24,29 @@ In order to run this programme, you will need to first install:
 * sqlparse==0.5.0
 * tzdata==2024.1
 
+### Installing
+To install this app:
+1.	Press the big green “<> Code” button to expand the drop-down menu
+2.	Click Download Zip
+3.	In this Zip folder open the sticky_notes_app-main directory.
+4.	Then move the “Task 24” directory to a relevant location on your device.
+
+### Executing Programme
+1.	In your terminal ensure you are currently within the “Task 24” directory.
+2.	Inside the terminal navigate in to sticky_notes_app.
+
+  	'''
+    cd sticky_notes_app
+    '''
+
+3. Make the any migrations to the database
+
+    '''
+    py manage.py makemigrations
+    py manage.py migrate
+    '''
+
+4. Run Server
+    '''
+    py manage.py runserver
+    '''
