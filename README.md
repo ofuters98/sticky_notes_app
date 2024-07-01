@@ -36,17 +36,25 @@ To install this app:
 2.	Inside the terminal navigate in to sticky_notes_app.
 
   	'''
-    cd sticky_notes_app
+
+  	cd sticky_notes_app
+
+  	'''
+
+4. Make the any migrations to the database
+
     '''
 
-3. Make the any migrations to the database
-
-    '''
     py manage.py makemigrations
+
     py manage.py migrate
+
     '''
 
-4. Run Server
+6. Run Server
+
     '''
+   
     py manage.py runserver
+   
     '''
